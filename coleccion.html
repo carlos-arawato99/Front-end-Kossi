@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="shorcut icon" type="image/x-icon" href="img/favicon.png">    
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/stylecoleccion.css">
+
+    <title>Kossi Moda Infantil - Colección</title>
+</head>
+
+<!-- Contiene el menú para clasificar los productos....
+    Bebés: OM, 3M, 6M,9M, 12M, 18M
+    Infantes: 2,4,6,8,
+    Juvenil: 10,12,14,16
+    Complementos: Accesorios, ...
+
+ En la parte inferior rellenar con:
+ Un cupóbn de descuento...
+ El carrusel de nuevos productos -->
+<!-- total de los productos seleccionados...
+Aplicar un cupoón de descuento
+Seguir comprando
+Formulario dartos..
+ -->
+ 
+ 
+ <body>
+  <div class="container-fluid">
+   
+    <!-- Estructura del nav / menu de navegación, -->
+    <header class="header">
+      <nav>
+        <div class="icon" id="icon">
+           <span>&#9776;</span>
+        </div>
+        <div class="enlaces uno" id="enlaces">
+         <a href="index.html">Home</a>
+          <a href="coleccion.html">Coleccion</a>
+          <a href="historia.html">Historia</a>
+          <a href="contacto.html">Contacto</a>
+          
+        </div>
+      </nav>
+        <div class="logo">
+        <img src="/img/logoprincipal.png">
+        </div>
+    </header>
+ <div id="null">
+       
+</div>    
+
+<!-- Menú vertical clasificación de la colección -->
+ <div class="row">
+    <!-- Area izquierda para las opciones  -->
+    <div class="col-3">
+      <div class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+        <h1 class="my-4">Colección 2019</h1>
+        <a class="nav-link active" id="v-pills-bebe-tab" data-toggle="pill" href="#v-pills-bebe" role="tab" aria-controls="v-pills-bebe" aria-selected="true">Bebés</a>
+        <a class="nav-link" id="v-pills-infantes-tab" data-toggle="pill" href="#v-pills-infantes" role="tab" aria-controls="v-pills-infantes" aria-selected="false">Infantes</a>
+        <a class="nav-link" id="v-pills-juvenil-tab" data-toggle="pill" href="#v-pills-juvenil" role="tab" aria-controls="v-pills-juvenil" aria-selected="false">Juvenil</a>
+        <a class="nav-link" id="v-pills-accesorios-tab" data-toggle="pill" href="#v-pills-accesorios" role="tab" aria-controls="v-pills-accesorios" aria-selected="false">Complementos</a>
+      </div>
+      <br>
+      <br>
+      <div>
+            <img  class="img-fluid float-left"  src="img/Slogan.bmp" alt="">
+      </div>
+
+    </div>
+    <!--Esta es el área derecha de contenido de la página colección-->      
+    <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+
+             <!--Esta es el área derecha de contenido de sección Bebés---------------------------------------------------------------->   
+             <div class="tab-pane fade show active" id="v-pills-bebe" role="tabpanel" aria-labelledby="v-pills-bebe">
+                <!--Header de la sección Bebé-->         
+                <h1 >Bebés</h1>
+                    <div class="header  px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center border-0" id=header>  
+                       
+                        <p class="lead">Productos disponibles desde Recién Nacido hasta los 18 Meses de Edad</p>
+                        <img src="img/divisor.png" class="card-img-top" alt="..." width="200" height="50" class="my-4">
+                </div> 
+                <!--Contenido de la sección Bebé-->         
+                
+                <div class="container" id="lista-productos">
+                    <!--La primera fila de las fotos de bebé  -->
+                    <div class="card-deck mb-0 text-center">
+                        <div class="card mb-0 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/frases.png" class="card-img-top">
+                            
+                            </div>
+                        </div>
+                        <div class="card mb-0 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/BEBE1.jpg" class="card-img-top">   
+                                <a href="producto.html" class="text-secondary"  onclick="seleccionar('1', 'BEBE')">Conjunto capri casual con aplicaciones bordadas</a>
+                                <h3 class="card-title pricing-card-title precio" data-id="1">$<span class="">25.00</span></h3>
+                            </div>
+                        </div>
+                        <div class="card mb-0 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/BEBE2.jpg" class="card-img-top">
+                                <a href="producto.html" class="text-secondary" onclick="seleccionar('2', 'BEBE')">Elegante conjunto de pantalón unicolor con camisa manga larga estampada</a>
+                                <h3 class="card-title pricing-card-title precio" data-id=2>$<span class="">30.00</span></h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--La segunda fila de las fotos de bebé-->
+                    <div class="card-deck mb-0 text-center">
+                        <div class="card mb-0 shadow-sm? border-0" >
+                             <div class="card-body border-0">
+                                <img src="img/BEBE3.jpg" class="card-img-top">
+                                <a href="producto.html" class="text-secondary" onclick="seleccionar('3', 'BEBE')">Elegante conjunto de pantalón unicolor con camisa manga larga unicolor en blanco</a>
+                                <h3 class="card-title pricing-card-title precio" data-id=3>$<span class="">30.00</span></h3>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="card mb-0 shadow-sm? border-0" >
+                                <div class="card-body border-0">
+                                   <img src="img/BEBE4.jpg" class="card-img-top">
+                                   <a href="producto.html" class="text-secondary" onclick="seleccionar('4', 'BEBE')">Jumper de pana con body estampado manga larga</a>
+                                   <h3 class="card-title pricing-card-title precio" data-id=4>$<span class="">20.00</span></h3>
+                                </div>
+                        </div>
+        
+                        <div class="card mb-0 shadow-sm? border-0" >
+                                <div class="card-body border-0">
+                                   <img src="img/BEBE5.jpg" class="card-img-top">
+                                   <a href="producto.html" class="text-secondary" onclick="seleccionar('5', 'BEBE')">Vestido estampado con aplicaciones y chaleco tejido a juego</a>
+                                   <h3 class="card-title pricing-card-title precio" data-id=5>$<span class="">50.00</span></h3>
+                                </div>
+                        </div>
+                    </div>
+                    <!--La tercera fila de las fotos de bebé-->
+                    <div class="card-deck mb-0 text-center">
+                    
+                        <div class="card mb-0 shadow-sm? border-0" >
+                             <div class="card-body border-0">
+                                <img src="img/BEBE6.jpg" class="card-img-top">
+                                <a href="#" class="text-secondary" onclick="seleccionar('6', 'BEBE')">Conjunto panty faralao crochet, ideal para las primeras sesiones de fotos</a>
+                                <h3 class="card-title pricing-card-title precio" data-id=6>$<span class="">30.00</span></h3>
+                            </div>
+                        </div>
+    
+                        <div class="card mb-0 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                               <img src="img/BEBE7.jpg" class="card-img-top">
+                               <a href="#" class="text-secondary" onclick="seleccionar('7', 'BEBE')">Vestido satinado estampado pepones con chaleco unicolor a juego</a>
+                               <h3 class="card-title pricing-card-title precio" data-id=7>$<span class="">50.00</span></h3>
+                            </div>
+                        </div>
+                        <div class="card mb-0 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/kossi2.png" class="card-img-top">    
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>   <!--Fin de los productos de la sección BEBES -->
+  
+        </div>  <!--Fin de la sección Bebés-->
+
+        <!--Esta es el área derecha de contenido de sección Infantees---------------------------------------------------------------->   
+        
+        <div class="tab-pane fade" id="v-pills-infantes" role="tabpanel" aria-labelledby="v-pills-infantes-tab">
+              <!--Header de la sección Infantes-->         
+              <h1 >Infantes</h1>
+             <div class="header  px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center border-0" id=header>  
+                <p class="lead">Productos disponibles de la talla 2 a la 8</p>
+                <img src="img/divisor.png" class="card-img-top" alt="..." width="200" height="50" class="my-4">
+            </div> 
+         <!--Contenido de la sección Infantes-->         
+              <div class="container" id="lista-productos">
+  
+                  <div class="card-deck mb-3 text-center border-0">
+        
+                      <div class="card mb-3 shadow-sm? border-0" >
+                          <div class="card-body border-0">
+                              <img src="img/INF1.jpg" class="card-img-top">   
+                               <a href="producto.html" class="text-secondary" onclick="seleccionar('8', 'INF')" >Jogger en color rosa, con franela estampada unicornio mágico</a>
+                               <h3 class="card-title pricing-card-title precio" data-id="8" onclick=ProductoSeleccionado>$<span class="">30.00</span></h3>
+      
+                            </div>
+                      </div>
+      
+                      <div class="card mb-3 shadow-sm? border-0" >
+                          <div class="card-body border-0">
+                              <img src="img/INF2.jpg" class="card-img-top">
+                              <a href="producto.html" class="text-secondary" onclick="seleccionar('9', 'INF')" >Panralón de pana marrón con franela NY</a>
+                              <h3 class="card-title pricing-card-title precio" data-id=9>$<span class="">40.00</span></h3>
+      
+                          </div>
+                      </div>
+                      <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/DISTINGUIRSE.jpg" class="card-img-top">
+                            
+                            </div>
+                        </div>
+    
+                  </div>
+      
+                  <div class="card-deck mb-3 text-center border-0">
+                        <div class="card mb-3 shadow-sm? border-0" >
+                                <div class="card-body border-0">
+                                    <img src="img/INF4.jpg" class="card-img-top">   
+                                     <a href="producto.html" class="text-secondary"  onclick="seleccionar('10', 'INF')">Conjunto de 3 piezas, con chaqueta reversible bicolor</a>
+                                     <h3 class="card-title pricing-card-title precio" data-id=10>$<span class="">45.00</span></h3>
+            
+                                  </div>
+                        </div>
+
+                        <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/INF5.jpg" class="card-img-top">   
+                                 <a href="producto.html" class="text-secondary" onclick="seleccionar('11', 'INF')" >Vestido pechera bordada con falda estampado floral</a>
+                                 <h3 class="card-title pricing-card-title precio" data-id=11>$<span class="">35.00</span></h3>
+        
+                              </div>
+                        </div>
+        
+                        <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/INF6.jpg" class="card-img-top">
+                                <a href="#" class="text-secondary"  onclick="seleccionar('12', 'INF')">Pantalón de pana gris con camisa a cuadros remangable</a>
+                                <h3 class="card-title pricing-card-title precio" data-id=12>$<span class="">40.00</span></h3>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                 
+              </div> <!--Fin de los productos de la sección Infantes -->
+          </div>  <!--Fin de la sección Infantes-->
+
+
+        <!--Esta es el área derecha de contenido de sección JUVENIL---------------------------------------------------------------->   
+      
+        <div class="tab-pane fade" id="v-pills-juvenil" role="tabpanel" aria-labelledby="v-pills-juvenil-tab">
+  
+         <!--Header de la sección Juvenil-->         
+         <h1 >Juvenil</h1>
+         <div class="header  px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center border-0" id=header>  
+            <p class="lead">Lo más fashion para quienes ya no son tan pequeños</p>
+            <img src="img/divisor.png" class="card-img-top" alt="..." width="200" height="50" class="my-4">
+        </div> 
+        <div class="container" id="lista-productos">
+
+            <div class="card-deck mb-3 text-center">
+            
+                <div class="card mb-3 shadow-sm? border-0" >
+                        <div class="card-body border-0">
+                            <img src="img/JUV1.jpg" class="card-img-top">   
+                             <a href="producto.html" class="text-secondary"  onclick="seleccionar('13', 'JUV')">Conjunto capri casual con aplicaciones bordadas</a>
+                             <h3 class="card-title pricing-card-title precio" data-id=13>$<span class="">25.00</span></h3>
+                            
+                          </div>
+                    </div>
+                
+
+                <div class="card mb-3 shadow-sm? border-0" >
+                    <div class="card-body border-0">
+                        <img src="img/JUV2.jpg" class="card-img-top">   
+                         <a href="producto.html" class="text-secondary"  onclick="seleccionar('14', 'JUV')">Conjunto capri casual con aplicaciones bordadas</a>
+                         <h3 class="card-title pricing-card-title precio" data-id=14>$<span class="">25.00</span></h3>
+                        
+                      </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm? border-0" >
+                    <div class="card-body border-0">
+                        <img src="img/JUV3.jpg" class="card-img-top">
+                        <a href="producto.html" class="text-secondary" onclick="seleccionar('15', 'JUV')">Elegante conjunto de pantalón unicolor con camisa manga larga estampada</a>
+                        <h3 class="card-title pricing-card-title precio" data-id=15>$<span class="">30.00</span></h3>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card-deck mb-3 text-center">
+                
+                    <div class="card mb-3 shadow-sm? border-0" >
+                         <div class="card-body border-0">
+                            <img src="img/juv4.jpg" class="card-img-top">
+                            <a href="producto.html" class="text-secondary" onclick="seleccionar('16', 'JUV')">Elegante conjunto de pantalón unicolor con camisa manga larga unicolor en blanco</a>
+                            <h3 class="card-title pricing-card-title precio" data-id=16>$<span class="">30.00</span></h3>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/JUV0.jpg" class="card-img-top">
+                            
+                            </div>
+                        </div>
+        
+    
+                    <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                               <img src="img/juv5.jpg" class="card-img-top">
+                               <a href="producto.html" class="text-secondary" onclick="seleccionar('17', 'JUV')">Vestido estampado con aplicaciones y chaleco tejido a juego</a>
+                               <h3 class="card-title pricing-card-title precio" data-id=17>$<span class="">50.00</span></h3>
+                            </div>
+                    </div>
+            </div>
+
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-3 shadow-sm? border-0" >
+                     <div class="card-body border-0">
+                        <img src="img/JUV6.jpg" class="card-img-top">
+                        <a href="#" class="text-secondary" onclick="seleccionar('18', 'JUV')">Conjunto panty faralao crochet, ideal para las primeras sesiones de fotos</a>
+                        <h3 class="card-title pricing-card-title precio" data-id=18>$<span class="">30.00</span></h3>
+                        
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm? border-0" >
+                        <div class="card-body border-0">
+                           <img src="img/JUV7.jpg" class="card-img-top">
+                           <a href="#" class="text-secondary" onclick="seleccionar('19', 'JUV')">Vestido satinado estampado pepones con chaleco unicolor a juego</a>
+                           <h3 class="card-title pricing-card-title precio" data-id=19>$<span class="">50.00</span></h3>
+                        </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm? border-0" >
+                        <div class="card-body border-0">
+                           <img src="img/JUV8.jpg" class="card-img-top">
+                           <a href="#" class="text-secondary" onclick="seleccionar('20', 'JUV')">Vestido satinado estampado pepones con chaleco unicolor a juego</a>
+                           <h3 class="card-title pricing-card-title precio" data-id=20>$<span class="">50.00</span></h3>
+                        </div>
+                </div>
+
+
+            </div>
+            
+        </div>   <!--Fin de los productos de la sección BEBES -->
+
+    </div>  <!--Fin de la sección Juvenil-->
+
+  
+        <!--Esta es el área derecha de contenido de sección Complementos---------------------------------------------------------------->   
+      
+        <div class="tab-pane fade" id="v-pills-accesorios" role="tabpanel" aria-labelledby="v-pills-accesorios-tab">
+  
+         <!--Header de la sección Complementos-->         
+        <h1 >Complementos</h1>
+        <div class="header  px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center border-0" id=header>  
+            <p class="lead">Los accesorios perfectos para completar el look</p>
+            <img src="img/divisor.png" class="card-img-top" alt="..." width="200" height="50" class="my-4">
+        </div> 
+        <!--Contenido de la sección Commplementos-->         
+        <div class="container" id="lista-productos">             
+
+                <div class="card-deck mb-3 text-center border-0">
+                        <div class="card mb-3 shadow-sm? border-0" >
+                                <div class="card-body border-0">
+                                    <img src="img/ACC1.jpg" class="card-img-top">   
+                                     <a href="producto.html" class="text-secondary"  onclick="seleccionar('21', 'ACC')">Juego de collar y pulsera Canicas, en colores cítricos</a>
+                                     <h3 class="card-title pricing-card-title precio" data-id=21 >$<span class="">15.00</span></h3>
+            
+                                  </div>
+                        </div>
+
+                        <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/ACC2.jpg" class="card-img-top">   
+                                 <a href="producto.html" class="text-secondary" onclick="seleccionar('22', 'ACC')" >Juego de collar y pulsera Canicas, magenta con azul cielo</a>
+                                 <h3 class="card-title pricing-card-title precio" data-id=22>$<span class="">15.00</span></h3>
+        
+                              </div>
+                        </div>
+        
+                        <div class="card mb-3 shadow-sm? border-0" >
+                            <div class="card-body border-0">
+                                <img src="img/ACC3.jpg" class="card-img-top">
+                                <a href="#" class="text-secondary" onclick="seleccionar('23', 'ACC')" >Juego de collar y pusera Canicas, lila con blanco</a>
+                                <h3 class="card-title pricing-card-title precio" data-id=23>$<span class="">15.00</span></h3>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+    
+        </div>  <!-- Complementos-->
+    
+      </div> <!--Esta es el área derecha de contenido de la página colección-->    
+    </div>   <!--Esta es el área derecha de contenido de la página colección-->     
+  </div> <!--Contenedor-->
+</div>
+
+<div class=row row-eq-height > 
+    <div class="col-3">
+    </div>
+    <div class="col-9">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <h3>
+                            Próximamente, nuestra tan esperada colección  <strong>NAVIDAD 2019</strong>
+                    </h3>     
+            </div>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                          <div class="card-deck">
+                                  <div class="card">
+                                    <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                  <div class="card">
+                                    <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                  </div>
+                                  <div class="card">
+                                    <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                  </div>
+                                  <div class="card">
+                                        <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                      <div class="card">
+                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                          </div>
+                                      <div class="card">
+                                            <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                               
+                                </div>
+                  </div>
+                  <div class="carousel-item">
+                        <div class="card-deck">
+                                <div class="card">
+                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                      <div class="card">
+                                        <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                        <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                            <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                          <div class="card">
+                                            <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                          </div>
+                                          <div class="card">
+                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                          </div>
+                                          <div class="card">
+                                                <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                              </div>
+                                          <div class="card">
+                                                <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                  
+                            
+                        </div>    
+                  </div>
+                  <div class="carousel-item">
+                        <div class="card-deck">
+                                <div class="card">
+                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                      <div class="card">
+                                        <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                        <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                      </div>
+                                      <div class="card">
+                                            <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                          <div class="card">
+                                            <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
+                                          </div>
+                                          <div class="card">
+                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
+                                          </div>
+                                          <div class="card">
+                                                <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
+                                              </div>
+                                          <div class="card">
+                                                <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                
+                        </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          
+        </div>
+</div>
+</div> <!--La fila que contiene el carrusel-->
+
+</div> <!--La fila-->
+
+
+
+</div> <!--Contenedor-->
+
+<script src="js/navbar.js"></script>
+<script src="bootstrap/js/jquery-3.4.1.js"></script> 
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/producto.js"></script>
+</body>
+</html>

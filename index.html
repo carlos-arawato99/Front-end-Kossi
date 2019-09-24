@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" type="image/x-icon" href="Fotos para el home/favicon.png">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Kossi moda infantil</title>
+</head>
+<body>
+
+    <!-- header que contendra el logo principal de la pagina -->
+    <header class="header">
+        <nav>
+          <div class="icon" id="icon">
+            <span>&#9776;</span>
+          </div>
+          <div class="enlaces uno" id="enlaces">
+            <a href="index.html">Home</a>
+            <a href="coleccion.html">Coleccion</a>
+            <a href="historia.html">Historia</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="shopping" id="shopping">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+         </div>
+          </div>
+        </nav>
+        <img id="logo" src="Fotos para el home/logoprincipal.png" alt="">
+    </header>
+
+     <!-- carrito de compras -->
+     <div class="cart-despegable one" id="despegable">
+        <table class="table" id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>imagen</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+            <a href="/paginas/carrito.html" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+        </table>
+        
+    </div>
+
+    
+
+   <!-- slider/carrousel -->
+   <div class="content-all" id="carousel">
+    <div class="content-img" id="img1">
+        <a href="#img5" class="icon-left-open"></a>
+        <img src="img/local.JPG">
+        <a href="#img2" class="icon-right-open"></a>
+    </div>
+    <div class="content-img" id="img2">
+        <a href="#img1" class="icon-left-open"></a>
+        <img src="img/3.jpg">
+        <a href="#img3" class="icon-right-open"></a>
+        <div class="content-details">
+            <a href="coleccion.html">Comprar Ahora</a><br><br>
+        </div>
+    </div>
+    <div class="content-img" id="img3">
+        <a href="#img2" class="icon-left-open"></a>
+        <img src="img/Slogan.png">
+        <a href="#img4" class="icon-right-open"></a>
+    </div>
+    <div class="content-img" id="img4">
+        <a href="#img3" class="icon-left-open"></a>
+        <img src="img/2.jpg">
+        <a href="#img5" class="icon-right-open"></a>
+        <div class="content-details">
+            <a href="contacto.html">Contactar</a><br><br>
+        </div>
+    </div>
+    <div class="content-img" id="img5">
+        <a href="#img4" class="icon-left-open"></a>
+        <img src="img/sloganDos.png">
+        <a href="#img1" class="icon-right-open"></a>
+    </div>
+</div>
+
+
+
+
+
+          <!-- pie de pagina -->
+    <footer class="footer" id="footer">Kossi Todos los derechos reservados 2019</footer>
+
+
+<script src="js/navbar.js"></script>
+</body>
+</html>
+
+<!-- Página principal...contiene:
+Menú en la pare superior
+Carrusel de imágenes...4 imágenes siempre con el botón comprar...que llamará a colección -->
