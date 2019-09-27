@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="css/stylecontacto.css">
+  <link rel="stylesheet" href="css/home.css">
 
-    <title>Kossi Moda Infantil - Producto</title>
+    <title>Kossi Moda Infantil - Contacto</title>
 </head>
 
  
  
  <body>
-  <div class="container-fluid">
+  
    
     <!-- Estructura del nav / menu de navegación, -->
     <header class="header">
@@ -31,23 +32,85 @@
           <a href="coleccion.html">Coleccion</a>
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
+          <div class="shopping" id="shopping">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+         </div>
         </div>
       </nav>
         <div class="logo">
         <img src="/img/logoprincipal.png">
         </div>
     </header>
- <div id="null">
-       
-</div>    
+ 
+    
+       <!-- carrito de compras -->
+     
+       <div class="cart-despegable one" id="despegable">
+        <table class="table" id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>imagen</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+            <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+        </table>
+      </div>
+  
 
+    
+    <!-- formulario de contacto -->
+    <div class="contenedor" id="contenedor">
+      <h1>Formulario de Contacto</h1>
+      <form action=""  class="form" id="form">
+        <div class="form-header">
+          <h1 class="form-title">Contacto</h1>
+        </div>
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-input" id="nombre" placeholder="Escriba su nombre">
 
+        <label for="correo" class="form-label">Correo Electronico</label>
+        <input type="email" name="email" class="form-input" id="correo" placeholder="Escriba su Correo">
 
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea type="mensaje" name="mensaje" class="form-input" placeholder="Escriba Aqui Su Mensaje"></textarea>
 
+        <input type="submit" class="btn-submit" id="btn" value="Enviar Mensaje">
+      </form>
+    </div>
+  
 
-<script src="js/navbar.js"></script>
-<script src="bootstrap/js/jquery-3.4.1.js"></script> 
-<script src="bootstrap/js/popper.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/producto.js"></script>
+  <div class="mapa">
+    <h1>Aqui Estamos</h1>
+    <img class="ubicacion" src="img/ubicacion.png" alt="">
+  </div>
+
+  
+          <!-- pie de pagina -->
+          <footer class="footer" id="footer">
+            <img src="img/logoprincipal.png" alt="">
+            <!-- <div class="enlaces-footer">
+                <a href="#">Home</a>
+                <a href="#">Coleccion</a>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Contacto</a>
+            </div> -->
+            <a class="fasF" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="fasF" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="fasF" href="#"><i class="fab fa-twitter"></i></a>
+            <!-- <div class="enlaces-footerDos">
+                  <a href="#">Home</a>
+                  <a href="#">Coleccion</a>
+                  <a href="#">Nuestra Historia</a>
+                  <a href="#">Contacto</a>
+              </div> -->
+              <textarea name="email" id="" cols="30" rows="2" placeholder="Enter your Email here*"></textarea>
+              <button class="boton-footer">Suscribe Now</button>
+          </footer>
+      
+<script src="js/contacto.js"></script>
 </body> 

@@ -18,7 +18,7 @@
   <!-- Estructura del nav / menu de navegación, -->
    <header class="header">
       <nav>
-        <div class="icon" id="icon">
+        <div class="icon" id="icono">
           <span>&#9776;</span>
         </div>
         <div class="enlaces uno" id="enlaces">
@@ -26,18 +26,67 @@
           <a href="coleccion.html">Coleccion</a>
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
+          <div class="shopping" id="shopping">
+            <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+         </div>
         </div>
       </nav>
         <div class="logo">
           <img src="img/logoprincipal.png" alt="">
         </div>
   </header>
+
+ 
+    
+     <!-- carrito de compras -->
+     
+     <div class="cart-despegable one" id="despegable">
+      <table class="table" id="lista-carrito">
+          <thead>
+              <tr>
+                  <th>imagen</th>
+                  <th>nombre</th>
+                  <th>precio</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+          <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+          <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+      </table>
+     
+      
+  </div>
+
+  
+     <!-- carrito de compras -->
+     
+     <div class="cart-despegable one" id="despegable">
+      <table class="table" id="lista-carrito">
+          <thead>
+              <tr>
+                  <th>imagen</th>
+                  <th>nombre</th>
+                  <th>precio</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+          <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+          <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+      </table>
+     
+      
+  </div>
+
+
+
   <div id="null">
        
   </div>     
  
   <!-- Contenido de la página -->
-  <div class="container">
+  <div class="container" id="contenedor-historia">
     <!--La primera fila solo un título-->
     <div class="row">
     <div class="col-lg-12">
@@ -140,11 +189,43 @@
          
     </div>
 
+
+
+
   <!-- pie de pagina -->
-<footer class="footer">Kossi 2019 Todos los derechos reservados</footer>
+  <footer class="footer" id="footer">
+    <img src="img/logoprincipal.png" alt="">
+    <!-- <div class="enlaces-footer">
+        <a href="#">Home</a>
+        <a href="#">Coleccion</a>
+        <a href="#">Nuestra Historia</a>
+        <a href="#">Contacto</a>
+    </div> -->
+    <a class="fasF" href="#"><i class="fab fa-facebook"></i></a>
+    <a class="fasF" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="fasF" href="#"><i class="fab fa-twitter"></i></a>
+    <!-- <div class="enlaces-footerDos">
+          <a href="#">Home</a>
+          <a href="#">Coleccion</a>
+          <a href="#">Nuestra Historia</a>
+          <a href="#">Contacto</a>
+      </div> -->
+      <textarea name="email" id="" cols="30" rows="2" placeholder="Enter your Email here*"></textarea>
+      <button class="boton-footer">Suscribe Now</button>
+  </footer>
+<script src="bootstrap/js/jquery-3.4.1.js"></script> 
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 
-<script src="js/navbar.js"></script>
+<!-- este script coleccion es para los efectos del menu y carrito 
+como ocultar, estan aparte para no interferir -->
+<script src="js/historia.js"></script>
+</body>
+</html>
+
+
+<script src="js/historia.js"></script>
 </body>
 </html>
 

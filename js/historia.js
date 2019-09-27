@@ -1,7 +1,4 @@
-//codigo js que funciona con el home.html a la hora de abrir el menu esconder 
-//el contenido del home sin que interfiera en el menu al hacer click
-
-let boton = document.getElementById('icon');
+let boton = document.getElementById('icono');
 let enlaces = document.getElementById('enlaces');
 let contador = 0;
 
@@ -16,19 +13,19 @@ boton.addEventListener('click',function(){
     }
 })
 
-let carousel = document.getElementById('carousel');
-let cuenta = 0;
+let historia = document.getElementById('contenedor-historia');
+contadorH = 0;
 
 boton.addEventListener('click',function(){
-  if(cuenta == 0){
-    carousel.className = ('content-dos')
-    cuenta = 1;
-  }else{
-    carousel.classList.remove('content-dos');
-    carousel.className = ('content-all');
-    cuenta = 0;
+  if(contadorH == 0){
+    historia.className = ('noHistoria');
+    contadorH = 1;
+  } else {
+    historia.classList.remove('noHistoria');
+    historia.className = ('container');
+    contadorH = 0;
   }
-});
+})
 
 
 
@@ -47,7 +44,3 @@ shopping.addEventListener('click',function(){
     delayDesp = 0;
   }
 })
-
-
-
-

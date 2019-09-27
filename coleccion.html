@@ -32,7 +32,7 @@ Formulario dartos..
  
  
  <body>
-  <div class="container-fluid">
+  
    
     <!-- Estructura del nav / menu de navegación, -->
     <header class="header">
@@ -45,21 +45,43 @@ Formulario dartos..
           <a href="coleccion.html">Coleccion</a>
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
-          
+          <div class="shopping" id="shopping">
+            <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+         </div>
         </div>
       </nav>
         <div class="logo">
         <img src="/img/logoprincipal.png">
         </div>
     </header>
- <div id="null">
-       
-</div>    
+
+   
+     <!-- carrito de compras -->
+     
+     <div class="cart-despegable one" id="despegable">
+      <table class="table" id="lista-carrito">
+          <thead>
+              <tr>
+                  <th>imagen</th>
+                  <th>nombre</th>
+                  <th>precio</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+          <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+          <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+      </table>
+     
+      
+  </div>
+
+
 
 <!-- Menú vertical clasificación de la colección -->
- <div class="row">
+ <div class="row" id="coleccion"> 
     <!-- Area izquierda para las opciones  -->
-    <div class="col-3">
+    <div class="col">
       <div class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
         <h1 class="my-4">Colección 2019</h1>
         <a class="nav-link active" id="v-pills-bebe-tab" data-toggle="pill" href="#v-pills-bebe" role="tab" aria-controls="v-pills-bebe" aria-selected="true">Bebés</a>
@@ -70,12 +92,12 @@ Formulario dartos..
       <br>
       <br>
       <div>
-            <img  class="img-fluid float-left"  src="img/Slogan.bmp" alt="">
+            <img  src="img/Slogan.bmp" alt="">
       </div>
 
     </div>
     <!--Esta es el área derecha de contenido de la página colección-->      
-    <div class="col-9">
+    <div class="col-">
         <div class="tab-content" id="v-pills-tabContent">
 
              <!--Esta es el área derecha de contenido de sección Bebés---------------------------------------------------------------->   
@@ -400,138 +422,60 @@ Formulario dartos..
       </div> <!--Esta es el área derecha de contenido de la página colección-->    
     </div>   <!--Esta es el área derecha de contenido de la página colección-->     
   </div> <!--Contenedor-->
-</div>
 
-<div class=row row-eq-height > 
+  <div class="row" row-eq-height > 
     <div class="col-3">
     </div>
-    <div class="col-9">
+    <div class="col-12">
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <h3>
                             Próximamente, nuestra tan esperada colección  <strong>NAVIDAD 2019</strong>
                     </h3>     
             </div>
-        
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                          <div class="card-deck">
-                                  <div class="card">
-                                    <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                    </div>
-                                  <div class="card">
-                                    <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                  </div>
-                                  <div class="card">
-                                    <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                  </div>
-                                  <div class="card">
-                                        <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
-                                        </div>
-                                      <div class="card">
-                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                          </div>
-                                      <div class="card">
-                                            <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                    </div>
-                                               
-                                </div>
-                  </div>
-                  <div class="carousel-item">
-                        <div class="card-deck">
-                                <div class="card">
-                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                        </div>
-                                      <div class="card">
-                                        <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                        <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                            <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
-                                            </div>
-                                          <div class="card">
-                                            <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                          </div>
-                                          <div class="card">
-                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                          </div>
-                                          <div class="card">
-                                                <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                              </div>
-                                          <div class="card">
-                                                <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                        </div>
-                                  
-                            
-                        </div>    
-                  </div>
-                  <div class="carousel-item">
-                        <div class="card-deck">
-                                <div class="card">
-                                        <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                        </div>
-                                      <div class="card">
-                                        <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                        <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                      </div>
-                                      <div class="card">
-                                            <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
-                                            </div>
-                                          <div class="card">
-                                            <img src="./img/NAV1.jpg" class="card-img-top" alt="...">
-                                          </div>
-                                          <div class="card">
-                                            <img src="./img/NAV2.jpg" class="card-img-top" alt="...">
-                                          </div>
-                                          <div class="card">
-                                                <img src="./img/NAV3.jpg" class="card-img-top" alt="...">
-                                              </div>
-                                          <div class="card">
-                                                <img src="./img/NAV4.jpg" class="card-img-top" alt="...">
-                                        </div>
-                                
-                        </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          
-        </div>
-</div>
-</div> <!--La fila que contiene el carrusel-->
-
-</div> <!--La fila-->
+       
+            
+ 
 
 
 
-</div> <!--Contenedor-->
 
-<script src="js/navbar.js"></script>
+
+
+
+
+
+
+
+
+
+  <!-- pie de pagina -->
+  <footer class="footer" id="footer">
+    <img src="img/logoprincipal.png" alt="">
+    <!-- <div class="enlaces-footer">
+        <a href="#">Home</a>
+        <a href="#">Coleccion</a>
+        <a href="#">Nuestra Historia</a>
+        <a href="#">Contacto</a>
+    </div> -->
+    <a class="fasF" href="#"><i class="fab fa-facebook"></i></a>
+    <a class="fasF" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="fasF" href="#"><i class="fab fa-twitter"></i></a>
+    <!-- <div class="enlaces-footerDos">
+          <a href="#">Home</a>
+          <a href="#">Coleccion</a>
+          <a href="#">Nuestra Historia</a>
+          <a href="#">Contacto</a>
+      </div> -->
+      <textarea name="email" id="" cols="30" rows="2" placeholder="Enter your Email here*"></textarea>
+      <button class="boton-footer">Suscribe Now</button>
+  </footer>
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/producto.js"></script>
+
+<!-- este script coleccion es para los efectos del menu y carrito 
+como ocultar, estan aparte para no interferir -->
+<script src="js/coleccion.js"></script>
 </body>
 </html>
