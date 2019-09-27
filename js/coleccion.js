@@ -1,3 +1,17 @@
+let noalbum = document.getElementById('icon')
+let ocultar = document.getElementById('coleccion');
+quitar = 0;
+
+noalbum.addEventListener('click',function(){
+  if(quitar == 0){
+    coleccion.className = ('noColleccion');
+    quitar = 1;
+  }else{
+    coleccion.classList.remove('noColleccion');
+    coleccion.className = ('row');
+    quitar = 0;
+  }
+});
 //codigo js que funciona con el home.html a la hora de abrir el menu esconder 
 //el contenido del home sin que interfiera en el menu al hacer click
 
@@ -16,21 +30,6 @@ boton.addEventListener('click',function(){
     }
 })
 
-let carousel = document.getElementById('carousel');
-let cuenta = 0;
-
-boton.addEventListener('click',function(){
-  if(cuenta == 0){
-    carousel.className = ('content-dos')
-    cuenta = 1;
-  }else{
-    carousel.classList.remove('content-dos');
-    carousel.className = ('content-all');
-    cuenta = 0;
-  }
-});
-
-
 
 //codigo para hacer efecto despegable al carrito como el menu
 let shopping = document.getElementById('shopping');
@@ -47,7 +46,3 @@ shopping.addEventListener('click',function(){
     delayDesp = 0;
   }
 })
-
-
-
-

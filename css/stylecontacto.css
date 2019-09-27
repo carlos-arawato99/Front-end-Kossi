@@ -2,113 +2,213 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 body{
-    font-size: 16px;
-    /*font-family: 'Lobster', cursive;*/
-   /* background: yellow;*/
-}
-.nul{
-    height: 200px;
+  width: 100%;
 }
 
-.icon{
-    opacity: 0;
+.efectload{
+    opacity: 1;
+    transition: opacity .5s linear 1s;
 }
 
-/* estilos del header / nav */
-header{
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
 
-header nav{
-    height: 70px;
-    background: #3CA55C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    display: flex;
-    justify-content: space-between;
+/* estilos del carrito despegable */
+.cart-despegable{
+    background: rgba(0,0,0,0.5);
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    margin-left: 75%;
 }
-
-.enlaces{
-    display: flex;
-    height: 100%;
-    width: 30%;
-    justify-content: space-around;
-    align-items: center;
+th{
+   margin: 0 auto;
+   padding-left: 10px;
+    color: #fff;
 }
-.enlaces a{
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    padding: 4px 0;
-    transition: 0.7s ease-out;
+.btn-vaciar, .btn-procesar{
+    background: coral;
     color: #fff;
     text-decoration: none;
+    position: relative;
+    top: 550px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.7s ease-out;
 }
-.enlaces a:hover, .active{
-    border-top: 1px solid coral;
-    border-bottom: 1px solid coral;
+.btn-vaciar:hover, .btn-procesar:hover{
+    background: rgba(0,0,0,0.5);
 }
-@media screen and (max-width:750px){
-    header{
-      height: 300px;
-    }
-
-    .icon{
-        opacity: 1;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        height: 70px;
-        align-items: center;
-        color: #fff;
-        background: transparent;
-        padding: 20px;
-        z-index: 100;
-        cursor: pointer;
-        margin-right: 40px;
-    }
-
-    .enlaces{
-        position: fixed;
-        height: 100vh;
-        right: 0;
+.one{
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition: all 1s ease;
+}
+.two{
+    opacity: 1;
+    -webkit-clip-path: circle(140.9% at 0 0);
+    clip-path: circle(140.9% at 0 0);
+    transition: opacity 1s ease;
+    transition: all 1s ease;
+}
+@media screen and (max-width: 1200px){
+    .cart-despegable{
         width: 100%;
-        flex-direction: column;
-        transition: all 1s ease;
-        background: #FF8008;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .uno{
-        -webkit-clip-path: circle(0% at 100% 0%);
-        clip-path: circle(0% at 100% 0%);
-    }
-    .dos{
-        -webkit-clip-path: circle(150% at 100% 0%);
-        clip-path: circle(150% at 100% 0%);
+        margin: 0 auto;
     }
 }
-/* estilos del logo */
- .logo{
-    display: grid;
-    justify-content: center;
+
+
+/* estilos del formulario de contacto */
+
+.contenedor{
+  text-align: center;
+}
+.contenedor .form .form-header .form-title{
+color: white;
+text-align: center;
+padding: 14px 0;
+}
+
+.contenedor .form {
+    
+    width: 100%;
+    max-width: 650px;
     margin: auto;
-    width: 300px;
-}
-@media screen and (max-width:485px){
-.logo{
-        display: grid;
-        justify-content: center;
-        margin: auto;
-        width:200px;
-    }
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+
+    transition: all .3s ease;
 }
 
+.contenedor .form .form-label{
+    display: block;
+    color: #f29718;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-label, .form-textarea{
+ 
+ border: none;
+ outline: none;
+ border-bottom: 2px solid #f29718;
+ width: 100%;
+ padding: 12px;
+ margin-bottom: 20px;
+ border-radius: 2px;
+ font-size: 14px;
+ color: #000;;
+}
+
+.contenedor .form  .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #f29718;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.contenedor .form .btn-submit:hover{
+    background: rgba(0, 0, 0, 0.7);
+    transition: all .5s ease;
+}
+
+.notForm{
+    opacity: 0;
+    transition: all 1s ease;
+    width: 10px;
+    height: 10px;
+}
+
+/* estilos del mapa de ubicacion */
+
+.mapa{
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    padding-top: 100px;
+}
 
 
+
+
+
+/* estilos del footer */
+.footer{
+    height: 440px;
+    border-top: 2px solid coral;
+    padding: 1rem 0;
+    margin-top: 10rem;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.footer img{
+    width:100px;
+}
+.fasF{
+    display: flex;
+    width: 30px;
+}
+.enlaces-footer{
+    width: 150px;
+    display: grid;
+    margin-left: 15%;
+    position: relative;
+    top: 40px;
+}
+.enlaces-footerDos{
+    width: 150px;
+    display: grid;
+    margin-left: 72%;
+    position: relative;
+    bottom: 164px;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+    padding: 6px;
+}
+textarea{
+ text-align: center;
+}
+.boton-footer{
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    height: 30px;
+    width: 220px;
+    background: coral;
+    color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.7s ease-out;
+}
+.boton-footer:hover{
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
