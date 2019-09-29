@@ -75,7 +75,8 @@ header nav{
     width: 1px;
     height: 1px;
     position: relative;
-    top: 200rem;
+    top: 30rem;
+    right: 1rem;
  }
 .efectload{
     opacity: 1;
@@ -167,7 +168,7 @@ th{
     width: 0;
     height: 0;
     position: relative;
-    top: 2rem;
+    top: 30rem;
     opacity: 0;
     transition: opacity 1s ease;
     transition: all 1s ease;

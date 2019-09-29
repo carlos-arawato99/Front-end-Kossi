@@ -1,8 +1,8 @@
-let boton = document.getElementById('icono');
+let btn = document.getElementById('icono');
 let enlaces = document.getElementById('enlaces');
 let contador = 0;
 
-boton.addEventListener('click',function(){
+btn.addEventListener('click',function(){
     if(contador == 0){
         enlaces.className = ('enlaces dos');
         contador=1;
@@ -16,7 +16,7 @@ boton.addEventListener('click',function(){
 let historia = document.getElementById('contenedor-historia');
 contadorH = 0;
 
-boton.addEventListener('click',function(){
+btn.addEventListener('click',function(){
   if(contadorH == 0){
     historia.className = ('noHistoria');
     contadorH = 1;
