@@ -23,7 +23,16 @@ mostrarProductoSeleccionado ()
 
 function mostrarProductoSeleccionado()
 {
+    const otrainfo =document.querySelector('#otrainfo tbody');
+    const row =document.createElement("tr");
+    row.innerHTML=`
+    <td>
     
+        <img class="img-fluid" src="${ImagenProducto}" id="ImagenProd" alt="">
+    </td>
+    `;
+    otrainfo.appendChild(row);
+
 
     var codigo =document.getElementById("CodProducto");
     codigo.innerHTML= CodProducto;
@@ -36,5 +45,13 @@ function mostrarProductoSeleccionado()
 
     var dibujarimagen= document.getElementById("ImagenProducto");
     dibujarimagen.innerHTML = ImagenProducto;
+
+    var talla=document.getElementById("talla");
+    talla.innerHTML="<option value='0M'>  0 Meses</option>"
+    talla.innerHTML= talla.innerText + "<option value='3M'>  3 Meses</option>"
+
+
+              
+    
     } 
     
