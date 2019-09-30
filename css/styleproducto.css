@@ -6,16 +6,27 @@
 
 body{
     font-size: 16px;
-    /*font-family: 'Lobster', cursive;*/
-   /* background: yellow;*/
-}
-.nul{
-    height: 200px;
+
 }
 
+.jumbotron
+{
+   background-color:white;
+   
+}
 .icon{
     opacity: 0;
 }
+.container{
+    transition: all 1s ease;
+}
+
+.noHistoria{
+    opacity: 0;
+    transition: all 1s ease;
+    width: 1px;
+    height: 1px;
+ }
 
 /* estilos del header / nav */
 header{
@@ -94,15 +105,15 @@ header nav{
         clip-path: circle(150% at 100% 0%);
     }
 }
-/* estilos del logo */
- .logo{
+/* estilos del logo */    /*AQUI CARLOS HACIA REFERENCIA A IMG EN GENERAL...YO ESPECIFIQUE EL LOGO */
+ .logo img{
     display: grid;
     justify-content: center;
     margin: auto;
     width: 300px;
 }
 @media screen and (max-width:485px){
-.logo{
+    .logo img{
         display: grid;
         justify-content: center;
         margin: auto;
@@ -112,3 +123,112 @@ header nav{
 
 
 
+/* estilos del carrito despegable */
+.cart-despegable{
+    background: rgba(0,0,0,0.5);
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    margin-left: 75%;
+}
+th{
+   margin: 0 auto;
+   padding-left: 10px;
+    color: #fff;
+}
+.btn-vaciar, .btn-procesar{
+    background: coral;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 550px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-vaciar:hover, .btn-procesar:hover{
+    background: rgba(0,0,0,0.5);
+}
+.one{
+    height: 1px;
+    width: 1px;
+    position: relative;
+    top: 30rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition: all 1s ease;
+}
+.two{
+    opacity: 1;
+    -webkit-clip-path: circle(140.9% at 0 0);
+    clip-path: circle(140.9% at 0 0);
+    transition: opacity 1s ease;
+    transition: all 1s ease;
+}
+@media screen and (max-width: 1200px){
+    .cart-despegable{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/* estilos del footer */
+.footer{
+    width: 100%;
+    height: 440px;
+    border-top: 2px solid coral;
+    padding: 1rem 0;
+    margin-top: 10rem;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+.footer img{
+    width:100px;
+}
+.fasF{
+    display: flex;
+    width: 30px;
+}
+.enlaces-footer{
+    width: 150px;
+    display: grid;
+    margin-left: 15%;
+    position: relative;
+    top: 40px;
+}
+.enlaces-footerDos{
+    width: 150px;
+    display: grid;
+    margin-left: 72%;
+    position: relative;
+    bottom: 164px;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+    padding: 6px;
+}
+textarea{
+ text-align: center;
+}
+.boton-footer{
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    height: 30px;
+    width: 220px;
+    background: coral;
+    color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.7s ease-out;
+}
+.boton-footer:hover{
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
