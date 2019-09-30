@@ -10,6 +10,11 @@ body{
 
 }
 
+.jumbotron
+{
+   background-color:white;
+   
+}
 .icon{
     opacity: 0;
 }
