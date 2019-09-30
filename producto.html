@@ -19,28 +19,32 @@
 <!DOCTYPE html>
 <html>
 <body >
-
-  <div class="container-fluid">
-   
-    <!-- Estructura del nav / menu de navegación, -->
-    <header class="header">
+ 
+  <!-- Estructura del nav / menu de navegación, -->
+  <header class="header">
       <nav>
-        <div class="icon" id="icon">
-           <span>&#9776;</span>
+        <div class="icon" id="icono">
+          <span>&#9776;</span>
         </div>
         <div class="enlaces uno" id="enlaces">
-         <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="coleccion.html">Coleccion</a>
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
+          <div class="shopping" id="shopping">
+            <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+         </div>
         </div>
       </nav>
         <div class="logo">
-        <img src="/img/logoprincipal.png">
+          <img src="img/logoprincipal.png" alt="">
         </div>
-    </header>
-    
+  </header>
 
+
+<!--Un contenedor-->
+  <div class="container-fluid">
+   <!--Primera fila-->
     <div class="row">
         <br>
         <br>
@@ -49,30 +53,31 @@
         <br>
         <br>
          
-        <div class="col-md-8">
-          <table id="otrainfo">
+        <div class="card col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mb-0 border-0" style="height:25% ;"> 
+           <table id="otrainfo">
             <tbody>
             </tbody>    
           </table>
          </div>
     
-        <div class="col-md-4">
+         <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-0 border-0" >  
+        
           
-          <h3 class="my-3" id="DesProducto" >Descripción Producto</h3>
+          
+          <h4 class="card-title">Descripción: </h4>
+          <p  id="DesProducto" >Descripción Producto</p>
           <br>
-          <h3 class="my-3" >Código:</h3>
+          <h4 class="card-title">Código SKU: </h4>
           <p  id="CodProducto" >Código Producto</p>
-          
-          <h3 class="my-3"  >Precio:</h3>
+          <br>
+          <h4 class="card-title">Precio: </h4>
           <p id="PrecioProducto" >Código Producto</p>
-          
-          <h3 class="my-3"  >Colores Disponibles:</h3>
+          <br>
+          <h4 class="card-title">Colores disponibles: </h4>
           <p id="ColorProducto" >  </p>
-
-          <h3 class="my-3"  >Talla:</h3>
+          <br>
+          <h4 class="card-title">Talla :</h4>
           <p id="TallaProducto" >  </p>
-          
-          
           <select class="form-control" id=talla>
               <option value="0M">0 Meses</option>
               <option value="3M">3 Meses</option>
@@ -83,33 +88,95 @@
               
               
             </select>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             
+            <br>
+            <h4 class="card-title">Cantidad:</h4>
+            <p id="Cantidad" >  </p>
+            <br>
+            <br>
             <button type="button" class="btn btn-success">Comprar</button>
-    
-          
-        </div>
-    
-      </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>      
 
-      <!-- /.row -->
+            <div class="card-block mb-0 border-2">
+                <h4 class="card-title">Información adicional: </h4>
+                <p class="card-text text-justify mb-0 border-0">   
+                   <ul>
+                     <li>100% Algodón</li>
+                     <li>No decolora</li>
+                     <li>Preferiblemente lavar a mano con agua fría</li>
+                     <li>Planchar a temperatura media</li>
+                     
+                   </ul>
+                </p>      
+                
+                <h4 class="card-title">Cambios y Reembolsos:</h4>
+                <p class="card-text text-justify mb-0 border-0">   
+                    En <strong>KOSSI </strong> nos apoyamos en proveedores, que se caracterizan por explorar el mundo de la moda, y la dedicación a estudiar el mercado
+                    enfocado en las nuevas generaciones.
+               </p>
+               <br>
+               <p class="card-text text-justify mb-0 border-0">   
+          
+               Nuestros productos, nacionales e importados, y ahora de confección propia, elaborados con materiales de la más alta calidad, 
+                 son en su mayor parte, de un estilo casual y lleno de color y diversión enfocado en un mercado moderno y sofisticado propio
+                 para un consumidor que quiere estar a la moda y sentirse identificado con su personalidad.
+                 
+                  
+                </p>      
+               <br>                          
+            </div> <!--Del card-->
+        </div> <!--De la columna-->
+    
+      </div> <!--De la primera fila-->
+  </div> <!--El contenedor-->
+
+      <!-- Segunda fila -->
       <div class="row">
       
-      <div class="col-md-8">
-      </div>
+        <div class="col-md-8">
+        </div>
 
-      <div class="col-md-4">    
-      </div>
-     
 
-  </div> <!--El contenedor--> 
-</body>
-</html> 
- 
+
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-0 border-0" style="width:25%;" >
+          
+            
+        </div>
+
+        <br>
+      <br>
+
+      </div> <!--Segunda fila-->
+
+
+
+
+
+<!-- pie de pagina -->
+<footer class="footer" id="footer">
+<img src="img/logoprincipal.png" alt="">
+<!-- <div class="enlaces-footer">
+    <a href="#">Home</a>
+    <a href="#">Coleccion</a>
+    <a href="#">Nuestra Historia</a>
+    <a href="#">Contacto</a>
+</div> -->
+<a class="fasF" href="#"><i class="fab fa-facebook"></i></a>
+<a class="fasF" href="#"><i class="fab fa-instagram"></i></a>
+<a class="fasF" href="#"><i class="fab fa-twitter"></i></a>
+<!-- <div class="enlaces-footerDos">
+      <a href="#">Home</a>
+      <a href="#">Coleccion</a>
+      <a href="#">Nuestra Historia</a>
+      <a href="#">Contacto</a>
+  </div> -->
+  <textarea name="email" id="" cols="30" rows="2" placeholder="Enter your Email here*"></textarea>
+  <button class="boton-footer">Suscribe Now</button>
+</footer>
 
 
 
@@ -118,4 +185,18 @@
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/productosel.js"></script>
-</body> 
+
+
+
+<!-- OJO FALTA el script  es para los efectos del menu y carrito 
+como ocultar, estan aparte para no interferir -->
+</body>
+</html>
+
+
+
+
+
+
+
+
