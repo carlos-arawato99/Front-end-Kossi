@@ -1,7 +1,7 @@
 console.log ("enlazado");
 
 /*Variables*/
-const productos=document.getElementById('lista-productos');
+const productos=document.getElementsByClassName('container lista-productos');
 
 
 //Listeners
@@ -9,7 +9,10 @@ cargarEventListeners();
 
 //Función que selecciona un producto para ver sus detalles
 function cargarEventListeners(){
-    productos.addEventListener('click', verproducto)
+    productos[0].addEventListener('click', verproducto)
+    productos[1].addEventListener('click', verproducto)
+    productos[2].addEventListener('click', verproducto)
+    productos[3].addEventListener('click', verproducto)
 };
 
 //Función que despliega los datos del producto seleccionado
@@ -17,8 +20,8 @@ function verproducto (e) {
     e.preventDefault ();
     //Delegation para seleccionar el producto 
     if (e.target.classList.contains('ver-producto') )
-    {
-    console.log ("Seleccionando")
+    {        
+        console.log ("Seleccionando")
     var producto=e.target.parentElement;
     leerDatosProducto (producto);
     }
