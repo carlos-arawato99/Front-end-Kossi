@@ -27,7 +27,11 @@
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
           <div class="shopping" id="shopping">
-            <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a id="cart" href="#">
+                <i class="fas fa-shopping-cart">
+
+                </i>
+          </a>
          </div>
         </div>
       </nav>
@@ -325,16 +329,31 @@
       <textarea name="email" id="" cols="30" rows="2" placeholder="Enter your Email here*"></textarea>
       <button class="boton-footer">Suscribe Now</button>
   </footer>
+
+
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
+      
 <!-- este script coleccion es para los efectos del menu y carrito 
 como ocultar, estan aparte para no interferir -->
 <script src="js/historia.js"></script>
+
+
+
+<!--Este script actualiza la cantidad de productos seleccionados  junto al icono del carrito que forma parte del header-->
+<script>
+    $(document).ready(function(){    
+
+        /*Actualiza el carrito de la página actual */
+         document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;    
+         console.log ("EL valor de localstorage es : " + localStorage.cuantos);
+              
+    });
+</script>
+
+
 </body>
 </html>
-
 
 

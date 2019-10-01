@@ -32,7 +32,11 @@
           <a href="historia.html">Historia</a>
           <a href="contacto.html">Contacto</a>
           <div class="shopping" id="shopping">
-            <a id="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a id="cart" href="#">
+              <i  class="fas fa-shopping-cart"> 
+               0 
+              </i>
+          </a>
          </div>
         </div>
       </nav>
@@ -93,6 +97,7 @@
           <h4 class="card-title precio">Precio: </h4>
           <p id="PrecioProducto" >Código Producto</p>
           <br>
+          <!--
           <h4 class="card-title">Colores disponibles: </h4>
           <p id="ColorProducto" >  </p>
           <br>
@@ -114,6 +119,7 @@
             <p id="Cantidad" >  </p>
             <br>
             <br>
+            -->
             <button type="button" id="agregar-carrito" onclick="comprar();" class="btn btn-success">Comprar</button>
             
             <br>
@@ -179,13 +185,23 @@
       </div> <!--De la primera fila-->
 
 
-<script src="js/productoMenu.js"></script>
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/productosel.js"></script>
+<script src="js/productoMenu.js"></script>
 
 
+<!--Este script actualiza la cantidad de productos seleccionados  junto al icono del carrito que forma parte del header-->
+<script>
+    $(document).ready(function(){    
+
+        /*Actualiza el carrito de la página actual */
+         document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;    
+         console.log ("EL valor de localstorage es : " + localStorage.cuantos);
+              
+    });
+</script>
 
 <!-- OJO FALTA el script  es para los efectos del menu y carrito 
 como ocultar, estan aparte para no interferir -->
