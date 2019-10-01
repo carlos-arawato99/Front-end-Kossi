@@ -16,55 +16,6 @@ body{
 }
 
 
-/* estilos del carrito despegable */
-.cart-despegable{
-    background: rgba(0,0,0,0.5);
-    width: 300px;
-    height: 600px;
-    border-radius: 10px;
-    margin-left: 75%;
-}
-th{
-   margin: 0 auto;
-   padding-left: 10px;
-    color: #fff;
-}
-.btn-vaciar, .btn-procesar{
-    background: coral;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    top: 550px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.7s ease-out;
-}
-.btn-vaciar:hover, .btn-procesar:hover{
-    background: rgba(0,0,0,0.5);
-}
-.one{
-    height: 1px;
-    width: 1px;
-    opacity: 0;
-    transition: opacity 1s ease;
-    transition: all 1s ease;
-}
-.two{
-    opacity: 1;
-    -webkit-clip-path: circle(140.9% at 0 0);
-    clip-path: circle(140.9% at 0 0);
-    transition: opacity 1s ease;
-    transition: all 1s ease;
-}
-@media screen and (max-width: 1200px){
-    .cart-despegable{
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-
 /* estilos del formulario de contacto */
 
 .contenedor{

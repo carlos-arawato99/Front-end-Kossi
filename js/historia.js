@@ -26,21 +26,3 @@ btn.addEventListener('click',function(){
     contadorH = 0;
   }
 })
-
-
-
-//codigo para hacer efecto despegable al carrito como el menu
-let shopping = document.getElementById('shopping');
-let despegable = document.getElementById('despegable');
-delayDesp = 0;
-
-shopping.addEventListener('click',function(){
-  if(delayDesp == 0){
-    despegable.className = ('cart-despegable two');
-    delayDesp = 1;
-  }else{
-    despegable.classList.remove('two');
-    despegable.className = ('cart-despegable one');
-    delayDesp = 0;
-  }
-})
