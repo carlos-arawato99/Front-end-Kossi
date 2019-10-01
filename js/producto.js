@@ -43,8 +43,6 @@ function leerDatosProducto (producto){
     console.log (infoProducto);
 
 
-    localStorage.clear();
-
     var CodProducto = infoProducto.id;
     var DesProducto = infoProducto.titulo;
     var PrecioProducto = infoProducto.precio;
@@ -58,7 +56,6 @@ function leerDatosProducto (producto){
     localStorage.ImagenProducto = ImagenProducto;
     
    window.location.href = "./producto.html";
-   
    
 }
 

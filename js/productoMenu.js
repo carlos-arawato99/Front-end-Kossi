@@ -48,43 +48,60 @@ shopping.addEventListener('click',function(){
 
 
 
-const listaProd = document.querySelector('#lista-carrito tbody');
-
 var CodProducto='';
 var DesProducto='';
 var PrecioProducto='';
 var ImagenProducto='';
+const listaProd = document.querySelector('#lista-carrito tbody');
 
-function comprar(){
-  localStorage.clear();
+/*Variable utilizada para llevar la cuenta de los productos agregados*/
+var cuantos = 0;
 
+
+/*Función que inserta un producto en el carrito de compra */
+function comprar()
+{   
+  /*Se toma del local storage la cantidad de productos seleccionados previamente*/
+  cuantos = parseInt(localStorage.cuantos);
+
+  /*Lee loas valores de los elementos de la página producto seleccionado*/
    CodProducto = document.getElementById("CodProducto").innerHTML;
    DesProducto = document.getElementById("DesProducto").innerHTML;
-  PrecioProducto = document.getElementById("PrecioProducto").innerHTML;
-  ImagenProducto = document.getElementById('otrainfo').innerHTML;
-
- // talla=document.getElementById("talla").innerHTML;;
-
-
-  
-
-  console.log('el codigo es: ' + CodProducto);
-  console.log('el codigo es: ' + DesProducto);
-  console.log('el codigo es: ' + PrecioProducto);
-  console.log('el codigo es: ' + ImagenProducto);
-
- 
-  insertarCarrito();
-  
-
+   PrecioProducto = document.getElementById("PrecioProducto").innerHTML;
+   ImagenProducto = document.getElementById('ImagenProd').src;
+   /*Dibuja los valores en el carrito*/
+  insertarCarrito()
 }
 
-function insertarCarrito() {
+
+
+
+
+
+
+function insertarCarrito() 
+{
   const row = document.createElement('tr');
   row.innerHTML = `
-
+    <td>
+      <img class="img-fluid" src="${ImagenProducto}" id="ImagenProd" alt="">
+    </td>
     <td>${DesProducto}</td>
     <td>${PrecioProducto}</td>
   `;
   listaProd.appendChild(row);
+  
+  /*Le suma un producto al contador que se utilizada para actualizar el icono del header*/
+  cuantos = cuantos + 1;
+  /*Lo almacena en el localstorage para que esté disponible en las otras páginas*/
+  localStorage.cuantos= cuantos;
+  /*Actualiza el carrito de la página actual */
+  document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;
+ 
+
+ /*Carlos...lo que esté en el carrito debe estar disponible para las otras páginas....aquí comenzando a programar que esté en el localstorage*/
+  localStorage.carrito = listaProd.innerHTML;
+  console.log (localStorage.carrito);
+
+  
 }

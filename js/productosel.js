@@ -19,8 +19,7 @@ localStorage.removeItem(ImagenProducto);
 
 mostrarProductoSeleccionado();
 
-/*Muestra el producto seleccionado en la página producto*/
-
+/*Muestra en la página Producto el producto seleccionado en la página Colección*/
 function mostrarProductoSeleccionado()
 {
     const otrainfo =document.querySelector('#otrainfo tbody');
@@ -43,16 +42,6 @@ function mostrarProductoSeleccionado()
     var precio =document.getElementById("PrecioProducto");
     precio.innerHTML= PrecioProducto + "  USD $  ";
 
-    var dibujarimagen= document.getElementById('ImagenProducto');
-    dibujarimagen.innerHTML= ImagenProducto;
-
-    var talla=document.getElementById("talla");
-    talla.innerHTML="<option value='0M'>  0 Meses</option>"
-    talla.innerHTML= talla.innerText + "<option value='3M'>  3 Meses</option>"
-
-
-              
-    
-    } 
+   } 
     
 

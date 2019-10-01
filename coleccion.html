@@ -55,6 +55,12 @@ Formulario dartos..
         </div>
     </header>
 
+  
+
+
+
+
+
    
      <!-- carrito de compras -->
      
@@ -577,12 +583,27 @@ Formulario dartos..
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/producto.js"></script>
 <script>
-    $(function () {
-      
-   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  e.target // newly activated tab
-  e.relatedTarget // previous active tab
-})
+        /*Funcion de Capturar, Almacenar datos y Limpiar campos*/
+       $(document).ready(function(){    
+
+           /*Actualiza el carrito de la página actual */
+            document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;         
+       });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
   <!-- este script coleccion es para los efectos del menu y carrito 
 como ocultar, estan aparte para no interferir -->
