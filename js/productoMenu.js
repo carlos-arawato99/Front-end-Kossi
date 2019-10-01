@@ -76,6 +76,7 @@ function comprar()
 
 function insertarCarrito() 
 {
+  
   const row = document.createElement('tr');
   row.innerHTML = `
     <td>
@@ -94,9 +95,10 @@ function insertarCarrito()
   document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;
  
 
- /*Carlos...lo que esté en el carrito debe estar disponible para las otras páginas....aquí comenzando a programar que esté en el localstorage*/
-  localStorage.carrito = listaProd.innerHTML;
+ /*Lo que esté en el carrito debe estar disponible para las otras páginas....aquí comenzando a programar que esté en el localstorage*/
+  localStorage.carrito = localStorage.carrito +  listaProd.innerHTML;
   console.log (localStorage.carrito);
-
+  
+  window.location.href = "./carrito.html";
   
 }
