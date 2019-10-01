@@ -74,11 +74,6 @@ function comprar()
 }
 
 
-
-
-
-
-
 function insertarCarrito() 
 {
   const row = document.createElement('tr');
