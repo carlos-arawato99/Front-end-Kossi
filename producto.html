@@ -23,7 +23,7 @@
   <!-- Estructura del nav / menu de navegación, -->
   <header class="header">
       <nav>
-        <div class="icon" id="icono">
+        <div class="icon" id="icon">
           <span>&#9776;</span>
         </div>
         <div class="enlaces uno" id="enlaces">
@@ -42,10 +42,31 @@
   </header>
 
 
-<!--Un contenedor-->
-  <div class="container-fluid">
+      <!-- carrito de compras -->
+     
+      <div class="cart-despegable one" id="despegable">
+        <table class="table" id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>imagen</th>
+                    <th>nombre</th>
+                    <th>precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+            <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+        </table>
+       
+        
+    </div>
+   
+
+
+
    <!--Primera fila-->
-    <div class="row">
+    <div class="row" id="productoSelected">
         <br>
         <br>
         <br>
@@ -61,8 +82,7 @@
          </div>
     
          <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-0 border-0" >  
-        
-          
+        <div class="producto" id="productos">
           
           <h4 class="card-title">Descripción: </h4>
           <p  id="DesProducto" >Descripción Producto</p>
@@ -70,7 +90,7 @@
           <h4 class="card-title">Código SKU: </h4>
           <p  id="CodProducto" >Código Producto</p>
           <br>
-          <h4 class="card-title">Precio: </h4>
+          <h4 class="card-title precio">Precio: </h4>
           <p id="PrecioProducto" >Código Producto</p>
           <br>
           <h4 class="card-title">Colores disponibles: </h4>
@@ -94,7 +114,7 @@
             <p id="Cantidad" >  </p>
             <br>
             <br>
-            <button type="button" class="btn btn-success">Comprar</button>
+            <button type="button" id="agregar-carrito" onclick="comprar();" class="btn btn-success">Comprar</button>
             
             <br>
             <br>
@@ -130,32 +150,8 @@
                <br>                          
             </div> <!--Del card-->
         </div> <!--De la columna-->
-    
-      </div> <!--De la primera fila-->
-  </div> <!--El contenedor-->
-
-      <!-- Segunda fila -->
-      <div class="row">
-      
-        <div class="col-md-8">
-        </div>
-
-
-
-        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-0 border-0" style="width:25%;" >
-          
-            
-        </div>
-
-        <br>
-      <br>
-
-      </div> <!--Segunda fila-->
-
-
-
-
-
+      </div>
+        
 <!-- pie de pagina -->
 <footer class="footer" id="footer">
 <img src="img/logoprincipal.png" alt="">
@@ -179,8 +175,11 @@
 </footer>
 
 
+    
+      </div> <!--De la primera fila-->
 
-<script src="js/navbar.js"></script>
+
+<script src="js/productoMenu.js"></script>
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -192,11 +191,3 @@
 como ocultar, estan aparte para no interferir -->
 </body>
 </html>
-
-
-
-
-
-
-
-

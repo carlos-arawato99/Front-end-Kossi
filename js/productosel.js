@@ -17,7 +17,7 @@ localStorage.removeItem(PrecioProducto);
 localStorage.removeItem(ImagenProducto);
 
 
-mostrarProductoSeleccionado ()
+mostrarProductoSeleccionado();
 
 /*Muestra el producto seleccionado en la página producto*/
 
@@ -43,8 +43,8 @@ function mostrarProductoSeleccionado()
     var precio =document.getElementById("PrecioProducto");
     precio.innerHTML= PrecioProducto + "  USD $  ";
 
-    var dibujarimagen= document.getElementById("ImagenProducto");
-    dibujarimagen.innerHTML = ImagenProducto;
+    var dibujarimagen= document.getElementById('ImagenProducto');
+    dibujarimagen.innerHTML= ImagenProducto;
 
     var talla=document.getElementById("talla");
     talla.innerHTML="<option value='0M'>  0 Meses</option>"
@@ -55,3 +55,4 @@ function mostrarProductoSeleccionado()
     
     } 
     
+
