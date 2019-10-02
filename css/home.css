@@ -47,6 +47,8 @@ header nav{
 .enlaces a:hover, .active{
     border-top: 1px solid coral;
     border-bottom: 1px solid coral;
+    color: #fff;
+    text-decoration: none;
 }
 @media screen and (max-width:750px){
     header{
