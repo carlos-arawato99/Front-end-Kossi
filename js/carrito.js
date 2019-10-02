@@ -45,8 +45,6 @@ function eliminarProducto(e){
   
   if(e.target.classList.contains('borrar-producto') ){
 
-
-
 e.target.parentElement.parentElement.remove();
 
   
