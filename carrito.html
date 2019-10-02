@@ -11,8 +11,9 @@
     <title>Mi Pedido - Kossi moda infantil</title>
 </head>
 <body>
+     <div class="contenedor">
 
-    <div class="contenedor" id="contenedor">
+    
     <!-- header que contendra el logo principal de la pagina -->
     <header class="header">
         <nav>
@@ -32,8 +33,8 @@
         <img id="logo" src="img/logoprincipal.png" alt="">
     </header>
 
-   
-    <div class="contenedor">
+  <div class="contenedor-producto" id="contenedor-producto">
+    
         <h1>Mi Pedido</h1>
   
      <!-- carrito de compras -->
@@ -42,22 +43,20 @@
         <table class="table" id="lista-carrito">
             <thead>
                 <tr>
-                    <th>Producto</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
+                    
                     <th></th>
                 </tr>
             </thead>
             <tbody></tbody>
            
         </table>
-        <a href="#" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+       
         <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
         
-    </div>
+   
 
 
-</div>
+
 <br>
 <br>
 <br>
@@ -107,14 +106,13 @@
                 </div>
             </div>
         </footer>
-<script src="js/navbar.js"></script>
 
-
+    </div>
+</div>
 
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-
 <script src="js/productoMenu.js"></script>
 
 
@@ -142,18 +140,6 @@
             });
     
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
 

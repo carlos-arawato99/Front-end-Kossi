@@ -1,5 +1,4 @@
-//codigo js que funciona con el home.html a la hora de abrir el menu esconder 
-//el contenido del home sin que interfiera en el menu al hacer click
+
 
 let boton = document.getElementById('icon');
 let enlaces = document.getElementById('enlaces');
@@ -16,18 +15,8 @@ boton.addEventListener('click',function(){
     }
 })
 
-let cont = 0;
 
-boton.addEventListener('click',function(){
-  if(cont == 0){
-    productoSelected.className = ('noProducto')
-    cont = 1;
-  }else{
-    productoSelected.classList.remove('noProducto');
-    productoSelected.className = ('row');
-    cont = 0;
-  }
-});
+
 
 
 
@@ -65,6 +54,9 @@ function insertarCarrito()
   </td>
   <td>${DesProducto}</td>
   <td>${PrecioProducto}</td>
+  <td>
+  <a href="#" class="borrar-producto" ${CodProducto}> x </a>
+  </td>
   </tr>
 `;
 
@@ -83,4 +75,19 @@ function insertarCarrito()
  
   window.location.href = "./carrito.html";
   
+}
+
+//elimina el producto seleccionado del carrito
+const carrito = document.getElementById('despegable');
+
+carrito.addEventListener('click', eliminarProducto);
+
+function eliminarProducto(e){
+  e.preventDefault();
+  
+  
+
+  if(e.target.classList.contains('borrar-producto') ){
+   e.target.parentElement.parentElement.remove();
+  }
 }
