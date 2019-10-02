@@ -26,6 +26,17 @@
     top: 30rem;
     right: 1rem;
 }
+
+.card{
+ width: 100%;
+ margin: 0 auto;    
+}
+
+#resumen{
+    width: 250px;
+
+}
+
 /* estilos del header / nav */
 header{
     width: 100%;
