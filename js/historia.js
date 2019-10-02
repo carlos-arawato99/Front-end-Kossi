@@ -22,7 +22,10 @@ btn.addEventListener('click',function(){
     contadorH = 1;
   } else {
     historia.classList.remove('noHistoria');
-    historia.className = ('container');
+    historia.className = ('contenedor');
     contadorH = 0;
   }
 })
+
+
+

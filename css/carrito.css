@@ -17,7 +17,15 @@
     top: 30rem;
     right: 1rem;
  }
-
+.ocultar-btnP{
+    opacity: 0;
+    transition: all 1s ease;
+    width: 1px;
+    height: 1px;
+    position: relative;
+    top: 30rem;
+    right: 1rem;
+}
 /* estilos del header / nav */
 header{
     width: 100%;
@@ -212,6 +220,11 @@ h1{
     cursor: pointer;
     background: #000;
     transition: ease 1s;
+}
+
+.borrar-producto{
+    text-decoration: none;
+    color: red;
 }
 
 @media screen and (max-width: 794px){
