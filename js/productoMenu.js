@@ -60,6 +60,8 @@ function insertarCarrito()
   cuantos = cuantos + 1;
   /*Lo almacena en el localstorage para que esté disponible en las otras páginas*/
   localStorage.cuantos= cuantos;
+
+
   /*Actualiza el carrito de la página actual */
   document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;
  
@@ -68,7 +70,7 @@ function insertarCarrito()
   localStorage.carrito = localStorage.carrito +  tira;
   
   console.log (localStorage.carrito);
- 
+
   window.location.href = "./carrito.html";
   
 }
