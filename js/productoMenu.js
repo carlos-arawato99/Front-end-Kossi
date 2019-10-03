@@ -13,7 +13,7 @@ boton.addEventListener('click',function(){
       enlaces.className = ('enlaces uno');
       contador = 0;
     }
-})
+});
 
 
 
@@ -24,6 +24,8 @@ var ImagenProducto='';
 
 /*Variable utilizada para llevar la cuenta de los productos agregados*/
 var cuantos = 0;
+/*Variable utilizada para llevar la cuenta de la cuenta a cancelar*/
+var cuentapagar = 0;
 
 
 /*Función que inserta un producto en el carrito de compra */
@@ -49,7 +51,7 @@ function insertarCarrito()
     <img class="img-fluid" src="${ImagenProducto}" id="ImagenProd" alt="">
   </td>
   <td>${DesProducto}</td>
-  <td>${PrecioProducto}</td>
+  <td class="precio">${PrecioProducto}</td>
   <td>
   <a href="#" class="borrar-producto" ${CodProducto}> x </a>
   </td>
@@ -58,19 +60,19 @@ function insertarCarrito()
 
   /*Le suma un producto al contador que se utilizada para actualizar el icono del header*/
   cuantos = cuantos + 1;
+  cuentapagar=parseInt(PrecioProducto);
+
   /*Lo almacena en el localstorage para que esté disponible en las otras páginas*/
   localStorage.cuantos= cuantos;
-
+  localStorage.cuentapagar=  parseInt(localStorage.cuentapagar) + cuentapagar;
 
   /*Actualiza el carrito de la página actual */
   document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;
  
 
  /*Lo que esté en el carrito debe estar disponible para las otras páginas....aquí comenzando a programar que esté en el localstorage*/
-  localStorage.carrito = localStorage.carrito +  tira;
-  
+  localStorage.carrito = localStorage.carrito +  tira; 
   console.log (localStorage.carrito);
-
   window.location.href = "./carrito.html";
   
 }

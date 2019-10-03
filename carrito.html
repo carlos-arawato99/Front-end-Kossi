@@ -34,13 +34,17 @@
         <img id="logo" src="img/logoprincipal.png" alt="">
     </header>
 
-  <div class="contenedor-producto" id="contenedor-producto">
-    
-        <h1>Mi Pedido</h1>
-  
-     <!-- carrito de compras -->
-     
-     <div class="cart-despegable one" id="despegable">
+
+   <!--Primera fila-->
+   <div class="row" >
+        <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mb-0 border-0" > 
+            </div>
+            
+    <div class="card col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-3 border-0  cart-despegable one" id="despegable" style="height:25% ;"> 
+        <h1 id=titulo>Carrito de Compra </h1>
+        <br>
+        <br>
+        <h4> Productos Seleccionados</h4>
         <table class="table" id="lista-carrito">
             <thead>
                 <tr>
@@ -51,23 +55,78 @@
             <tbody></tbody>
            
         </table>
-       
-        <a href="#" id="procesar-pedido" class="btn-procesar">Procesar Compra</a>
+     </div> <!--De la columna-->
+
+     
+    <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mb-0 border-0"  >  
+      
+            <br>
+            <br>
+            <br>
+            
+            <p>
+                    Resumen de la Orden:
+            </p>
+
+            <div id="resumen" class="card-block mb-0 border-2" >
+                    
+                    
+                    <table class="table" id="total">
+                    <tbody>
+                    <tr>    
+                            <th>SubTotal:</th>
+                        </tr>
+                        <tr>    
+                            <th>Costo de envío:</th>
+                        </tr>
+                        <tr>    
+                            <th>Total:</th>
+                        </tr>
+                    
+                    </tbody>
+                   
+                </table>
+             
+     
+                    
+                    
+                      
+                    </p>      
+                   <br>                          
+            </div> <!--Del card-->  
+         
+      <br>
+      <button type="button" id="agregar-carrito" onclick="finalizar();" class="btn btn-success" widht=25%>Finalizar Compra</button>
+
+        <br>
+        <br>
+        <br>      
+
+        <p>
+            Los tiempos de envios en toda Venezuela son de 5 a 7 días hábiles.
+        </p>
+        <p>
+            Si necesitas ayuda, escríbenos al correo electrónico kossimoda@gmail.com llamános al +58 212 962 6084 o escríbenos a nuestro WhatsApp +58-412-6099343
+        </p>
+          
+
+
+
+
+
+
+
+    </div> <!--De la columna-->
+
+    <div class="card col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mb-0 border-0" > 
+    </div>
         
-   
+
+   </div> <!--de la fila-->
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-      <!-- pie de pagina -->
+<!-- pie de pagina -->
+<div class="row" >
 
         <footer>
             <div class="footer-container">
@@ -107,10 +166,9 @@
                 </div>
             </div>
         </footer>
-
-    </div>
 </div>
 
+</div> <!--Del contenedor-->
 
 <script src="bootstrap/js/jquery-3.4.1.js"></script> 
 <script src="bootstrap/js/popper.min.js"></script>
@@ -121,15 +179,17 @@
 <!--Este script actualiza la cantidad de productos seleccionados  junto al icono del carrito que forma parte del header-->
 <script>
         $(document).ready(function(){  
-                
                 /*Si recién se está cargando el site*/
                 if  (localStorage.cuantos== undefined)
                 {
                     var cuantos    =  0;
                     localStorage.cuantos=cuantos;
+                    
                     var carrito    = "" ;
                     localStorage.carrito=carrito;
-
+                    
+                    var cuentapagar = 0;
+                    localStorage.cuentapagar =0 ;
                 } 
                 else
                 {
@@ -138,7 +198,29 @@
                  /*Actualiza el carrito de la página actual */
                  document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;    
                  document.querySelector('#lista-carrito tbody').innerHTML=localStorage.carrito;
-            
+                 document.getElementById('titulo').innerHTML= document.getElementById('titulo').innerHTML + "(" + localStorage.cuantos + ")";
+                 document.getElementById('total').innerHTML=`
+
+                        <tr>    
+                            <th>SubTotal:  </th>
+                            <th>${localStorage.cuentapagar} </th>
+                            
+                        </tr>
+                        <tr>    
+                            <th>Costo de envío: </th>
+                            <th>0.00 </th>
+                            
+                        </tr>
+                        <tr>    
+                            <th>Total: </th>
+                            <th> ${localStorage.cuentapagar} </th>
+                             
+                        </tr>
+
+
+
+
+                 `
             });
     
     </script>
