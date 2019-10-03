@@ -24,6 +24,10 @@ body{
     transition: all 1s ease;
 }
 
+.row{
+    transition: all 1 ease;
+}
+
 .noProducto{
     opacity: 0;
     transition: all 1s ease;

@@ -15,7 +15,19 @@ boton.addEventListener('click',function(){
     }
 });
 
+let quitarProductos = document.getElementById('productoSelected');
+let notProduct = 0;
 
+boton.addEventListener('click',function(){
+    if(notProduct == 0){
+      quitarProductos.className = ('noProducto');
+        notProduct=1;
+    }else{
+      quitarProductos.classList.remove('noProducto');
+      quitarProductos.className = ('row');
+      notProduct = 0;
+    }
+});
 
 var CodProducto='';
 var DesProducto='';
