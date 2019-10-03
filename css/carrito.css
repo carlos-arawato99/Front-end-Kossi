@@ -63,6 +63,8 @@ header nav{
 .enlaces a:hover, .active{
     border-top: 1px solid coral;
     border-bottom: 1px solid coral;
+    text-decoration: none;
+    color: #fff;
 }
 @media screen and (max-width:750px){
     header{
@@ -204,120 +206,6 @@ h1{
 .table{
     margin: 0 auto;
 }
-
-.seguir-comprando{
-    margin-left: 25rem;
-    padding: 10px;
-    position: relative;
-    top: 82px;
-    text-decoration: none;
-    background: #FF8008;
-    color: #fff;
-    transition: ease 1s;
-    border-radius: 5px;
-}
-.seguir-comprando:hover{
-    cursor: pointer;
-    background: #000;
-    transition: ease 1s;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.btn-procesar{
-    margin-left: 10rem;
-    padding: 10px;
-    position: relative;
-    top: 5rem;
-    text-decoration: none;
-    background: #FF8008;
-    color: #fff;
-    transition: ease 1s;
-    border-radius: 5px;
-}
-.btn-procesar:hover{
-    cursor: pointer;
-    background: #000;
-    transition: ease 1s;
-    text-decoration: none;
-    color: #fff;
-}
-
-.borrar-producto{
-    text-decoration: none;
-    color: red;
-}
-
-@media screen and (max-width: 930px){
-    .seguir-comprando{
-        margin-left: 15rem;
-        position: relative;
-        top: 105px;
-    }
-    .btn-procesar{
-        margin-left: 30rem;
-    }
-}
-@media screen and (max-width: 730px){
-    .seguir-comprando{
-        margin-left: 12.5rem;
-    }
-    .btn-procesar{
-        margin-left: 25rem;
-    }
-}
-@media screen and (max-width: 610px){
-    .seguir-comprando{
-        margin-left: 10rem;
-    }
-    .btn-procesar{
-        margin-left: 20rem;
-    }
-}
-@media screen and (max-width: 530px){
-    .seguir-comprando{
-        margin-left: 6rem;
-    }
-    .btn-procesar{
-        margin-left: 16rem;
-    }
-}
-@media screen and (max-width: 422px){
-    .seguir-comprando{
-        margin-left: 2rem;
-    }
-    .btn-procesar{
-        margin-left: 12rem;
-    }
-}
-@media screen and (max-width: 350px){
-    .seguir-comprando{
-        margin-left: 1rem;
-        width: 100px;
-    }
-    .btn-procesar{
-        margin-left: 11rem;
-        width: 100px;
-    }
-}
-@media screen and (max-width: 338px){
-    .seguir-comprando{
-        margin-left: 2rem;
-        width: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        top: 148px;
-    }
-    .btn-procesar{
-        margin-left: 10rem;
-        width: 100px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 
 
 /* estilos del footer - pie de pagina*/
