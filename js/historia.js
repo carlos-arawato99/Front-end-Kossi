@@ -13,19 +13,20 @@ btn.addEventListener('click',function(){
     }
 })
 
-let historia = document.getElementById('contenedor-historia');
-contadorH = 0;
+let NotHistory = document.getElementById('history');
+let quitarH = 0;
 
 btn.addEventListener('click',function(){
-  if(contadorH == 0){
-    historia.className = ('noHistoria');
-    contadorH = 1;
-  } else {
-    historia.classList.remove('noHistoria');
-    historia.className = ('contenedor');
-    contadorH = 0;
+  if(quitarH == 0){
+    NotHistory.className = ('noHistoria')
+    quitarH = 1;
+  }else{
+    NotHistory.classList.remove('noHistoria');
+    NotHistory.className = ('row');
+    quitarH = 0;
   }
-})
+});
+
 
 
 

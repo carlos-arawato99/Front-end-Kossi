@@ -31,6 +31,11 @@ body{
     opacity: 0;
 }
 
+@media screen and (max-width: 768px){
+    .carrousel{
+        display: none;
+    }
+}
 
 /* estilos del header / nav */
 header{
@@ -170,6 +175,7 @@ header nav{
     color: #fff;
     padding: 12px 20px;
     transition: ease 1s;
+    border-radius: 5px;
 }
 .info-main a:hover{
     background: #000;
@@ -335,9 +341,9 @@ footer{
     }
 }
 
-
-
-
+input{
+    border-radius: 5px;
+}
 
 
 
