@@ -147,7 +147,8 @@
                     localStorage.cuantos=cuantos;
                     var carrito    = "" ;
                     localStorage.carrito=carrito;
-
+                    var cuentapagar = 0;
+                    localStorage.cuentapagar =0 ;
                 } 
                 else
                 {
@@ -155,7 +156,7 @@
                 }
                  /*Actualiza el carrito de la página actual */
                  document.getElementById('cart').innerHTML=` <i class="fas fa-shopping-cart">  ` +  localStorage.cuantos + `</i>`;         
-            
+                
             });
     
     </script>

@@ -514,3 +514,7 @@ footer{
         margin: auto;
     }
 }
+
+#resumen{
+    background-color: lightgrey;
+}

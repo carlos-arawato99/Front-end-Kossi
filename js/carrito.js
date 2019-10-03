@@ -30,6 +30,9 @@ boton.addEventListener('click',function(){
 
 
 var cuantos=0;
+/*Variable utilizada para llevar la cuenta de la cuenta a cancelar*/
+
+var cuentapagar = 0;
 
 //elimina el producto seleccionado del carrito
 const carrito = document.getElementById('despegable');
@@ -40,10 +43,15 @@ function eliminarProducto(e){
   e.preventDefault();
   
   
-
   if(e.target.classList.contains('borrar-producto') ){
-    /*Elimina el prooducto de la página carrito*/
-   e.target.parentElement.parentElement.remove();
+
+
+
+e.target.parentElement.parentElement.remove();
+
+  
+    
+   
   /*Le suma un producto al contador que se utilizada para actualizar el icono del header*/
   cuantos= parseInt (localStorage.cuantos);
   cuantos = cuantos - 1;
@@ -54,6 +62,7 @@ function eliminarProducto(e){
  
  /*Lo que esté en el carrito debe estar disponible para las otras páginas....aquí comenzando a programar que esté en el localstorage*/
  localStorage.carrito = document.querySelector('#lista-carrito tbody').innerHTML
+
 
   }
 }
