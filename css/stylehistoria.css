@@ -22,13 +22,21 @@ body{
     transition: all 1s ease;
 }
 
+.row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 1s ease;
+}
+
 .noHistoria{
     opacity: 0;
-    transition: all 1s ease;
     width: 1px;
     height: 1px;
     position: relative;
     top: 30rem;
+    transition: all 1s ease;
  }
 
 /* estilos del header / nav */
