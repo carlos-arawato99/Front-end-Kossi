@@ -114,8 +114,8 @@ header nav{
 /* estilos y responsive del slider / carrousel */
 
 .content-all{
-    width: 80%;
-    height: 500px;
+    width: 800px;
+    height: 700px;
     position: relative;
     display: flex;
     margin: auto;
@@ -171,7 +171,7 @@ header nav{
 
 .content-details{
     position: relative;
-    top: -150px;
+    top: -250px;
     width: 500px;
     margin: auto;
     padding: 10px;
@@ -213,8 +213,7 @@ header nav{
 }
 @media screen and (max-width:750px){
     .content-all{
-        width: 500px;
-        height: 300px;
+        width: 400px;
         transition: all 1s ease;
 
     }
@@ -245,7 +244,7 @@ header nav{
 
     .icon-left-open{
         position: absolute;
-        top: 150px;
+        top: 250px;
         left: 0;
         font-size: 20px;
         text-decoration: none;
@@ -253,7 +252,7 @@ header nav{
     }  
     .icon-right-open{
         position: absolute;
-        top: 150px;
+        top: 250px;
         right: 0;
         font-size: 20px;
         text-decoration: none;
@@ -262,7 +261,7 @@ header nav{
 
     .content-details{
         position: relative;
-        top: -200px;
+        top: -270px;
         width: 300px;
         margin: auto;
         padding: 10px;
@@ -280,10 +279,9 @@ header nav{
     }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:490px){
     .content-all{
-        width: 400px;
-        height: 300px;
+        width: 250px;
         transition: all 1s ease;
     }
 /* la clase content dos se aplica con javascript para ocultar y mover
@@ -313,7 +311,7 @@ header nav{
 
     .content-details{
         position: relative;
-        top: -200px;
+        top: -270px;
         width: 150px;
         margin: auto;
         padding: 10px;
@@ -345,20 +343,7 @@ header nav{
     }
 }
 
-@media screen and (max-width:430px){
-    .content-all{
-        width: 350px;
-        height: 300px;
-        transition: all 1s ease;
-    }
-}
-@media screen and (max-width:390px){
-    .content-all{
-        width: 250px;
-        height: 300px;
-        transition: all 1s ease;
-    }
-}
+
 
 
 
